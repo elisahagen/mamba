@@ -57,7 +57,7 @@ class Mamba2(nn.Module, PyTorchModelHubMixin):
         conv_bias=True,
         # Fused kernel and sharding options
         chunk_size=256,
-        use_mem_eff_path=True,
+        use_mem_eff_path=False,
         layer_idx=None,  # Absorb kwarg for general module
         process_group=None,
         sequence_parallel=True,
